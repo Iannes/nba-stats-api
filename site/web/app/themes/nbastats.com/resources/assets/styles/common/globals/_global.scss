@@ -1,0 +1,78 @@
+* {
+  @include smooth-fonts();
+}
+
+body {
+  font-family: $font-family;
+  color: $primary;
+  overflow-x: hidden;
+
+  main.main {
+    min-height: 100vh;
+    margin: auto;
+
+    article#team-dropdown-container {
+
+      display: flex;
+      justify-content: flex-end;
+      select,
+      option {
+        cursor: pointer;
+      }
+   }
+   .table {
+    border: 1px solid #dcdcdc;
+  }
+  }
+}
+
+a {
+  color: $primary;
+  transition: color .4s ease-in-out;
+  cursor: pointer;
+
+  @include for-size(desktop-hover) {
+    &:hover {
+      color: darken(red, 90%);
+    }
+  }
+}
+
+p {
+  font: $paragraph-font-family;
+  margin: 20px auto;
+  font-weight: 300;
+}
+
+h3 {
+  font: $h3-font;
+  color: $primary;
+  margin: 20px auto;
+}
+
+
+ul#breadcrumbs {
+  display: flex;
+
+  .item-current {
+
+    &--green strong {
+      color: $light-green;
+    }
+
+    &--orange strong {
+      color: $orange;
+    }
+  }
+}
+#map {
+  height: 75%;  /* The height is 400 pixels */
+  width: 100%;  /* The width is the width of the web page */
+  width: 85%;
+  margin: auto;
+  top: 100px;
+ }
+
+ select#team-dropdown {
+  margin-left: auto;
+}

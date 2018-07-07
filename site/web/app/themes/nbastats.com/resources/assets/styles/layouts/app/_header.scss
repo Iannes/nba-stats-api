@@ -1,0 +1,10 @@
+header.header-nav {
+  position: fixed;
+  width: 100%;
+  z-index: 60;
+
+  @include for-size(tablet-down) {
+    position: fixed;
+    background-color: $primary;
+  }
+}

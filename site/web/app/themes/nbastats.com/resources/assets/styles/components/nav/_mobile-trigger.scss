@@ -1,0 +1,58 @@
+.mobile-menu--trigger {
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 48px;
+
+  .line {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 2px;
+      background: $burger-color;
+      transition: all ease-in-out 0.4s;
+
+      &.line-1 {
+          transition: all 0.4s 0.4s, transform 0.4s 0s;
+      }
+
+      &.line-2 {
+          top: 50%;
+          margin-top: -1px;
+          left: 0;
+          transition: all 0.4s 0.4s;
+      }
+
+      &.line-3 {
+          bottom: 0;
+          top: auto;
+          left: 0;
+          transition: all 0.4s 0.4s, transform 0.4s 0s;
+      }
+  }
+
+  &.active {
+      .line-1 {
+          top: 50%;
+          margin-top: -1px;
+          transform: rotate(45deg);
+          transition: all 0.4s, transform 0.4s 0.4s;
+      }
+
+      .line-2 {
+          opacity: 0;
+          transition: all 0.4s, opacity 0.4s 0s;
+      }
+
+      .line-3 {
+          bottom: 50%;
+          margin-bottom: -1px;
+          transform: rotate(-45deg);
+          transition: all 0.4s, transform 0.4s 0.4s;
+      }
+  }
+}

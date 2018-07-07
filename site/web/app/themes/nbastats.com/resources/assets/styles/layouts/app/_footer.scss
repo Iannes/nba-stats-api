@@ -1,0 +1,7 @@
+footer {
+  @extend .section;
+  background: $primary;
+  min-height: auto;
+  color: white;
+  text-align: center;
+}

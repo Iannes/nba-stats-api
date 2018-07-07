@@ -1,0 +1,278 @@
+// thead {
+//   background: $green;
+//   color: #eee;
+// }
+
+// tr.details {
+//   background: white;
+//   color: grey;
+// }
+
+// tbody {
+//   .playerRow,
+//   .playerRow:nth-of-type(odd) {
+//     cursor: pointer;
+//     transition: all .4s ease-in-out;
+//     &:hover {
+//       background: rgb(29, 102, 151);
+//       color: white;
+//       a {
+//         color: white;
+//         text-decoration: none;
+//       }
+//     }
+//   }
+// }
+
+// .table {
+
+//   &-wrapper {
+//     max-width: 1400px;
+//     // min-height: 500px;
+//     color: black;
+//     margin: auto;
+//     border: 1px solid grey;
+//     overflow: hidden;
+//     font-family: sans-serif;
+//       font-size: 20px;
+
+//   }
+//   &-top {
+//     width: 100%;
+//     background-color: green;
+//     padding: 1.2rem;
+//     text-transform: uppercase;
+//   }
+//   &-row {
+//     width: 100%;
+//     background-color: #f2f2f2;
+//     border-radius: 4px;
+//     display: flex;
+//     border-bottom: solid 2px #a9b3bc;
+//     &:nth-of-type(even) {
+//       background-color: transparent;
+//     }
+
+//     &__subheader {
+//       color: grey;
+//       font-weight: bold;
+//     }
+//     .column {
+//       height: 20px;
+//       padding: 1.2rem;
+//       &-one {
+//         height: 100%;
+//         flex: 1 1 10%;
+//       }
+//       &-three {
+//         flex: 4 1 20%;
+//         height: 100%;
+//       }
+//       &-four {
+//         flex: 4 1 25%;
+//         height: 100%;
+//         background-color: transparent;
+//         color: #17729e;
+//         &__title {
+//           color: grey;
+//           background-color: transparent;
+//         }
+//         &--name {
+//           background-color: #f2f2f2;
+//           a {
+//             color: #17729e;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// //FLEX TABLE
+// .table {
+
+//   &-wrapper {
+//     max-width: 1400px;
+//     min-height: 500px;
+//     color: black;
+//     margin: auto;
+//     border: 1px solid grey;
+//     overflow: hidden;
+//     font-family: sans-serif;
+//       font-size: 20px;
+
+//   }
+//   &-header {
+//     width: 100%;
+//     background-color: green;
+//     padding: 1.2rem;
+//     text-transform: uppercase;
+//   }
+//   &-row {
+//     width: 100%;
+//     background-color: #f2f2f2;
+//     border-radius: 4px;
+//     display: flex;
+//     border-bottom: solid 2px #a9b3bc;
+//     &:nth-of-type(even) {
+//       background-color: transparent;
+//     }
+
+//     &__subheader {
+//       color: grey;
+//       font-weight: bold;
+//     }
+//     .column {
+//       height: 20px;
+//       padding: 1.2rem;
+//       &-one {
+//         flex: 1 1 10%;
+//       }
+//       &-four {
+//         flex: 4 1 25%;
+//         height: 100%;
+//         background-color: transparent;
+//         color: #17729e;
+//         &__title {
+//           color: grey;
+//           background-color: transparent;
+//         }
+//         &--name {
+//           background-color: #f2f2f2;
+//           a {
+//             color: #17729e;
+//           }
+//         }
+//       }
+//       &-five {
+//         flex: 5 1 20%;
+//       }
+//     }
+//   }
+// }
+
+/* typography */
+
+html,
+thead th,
+tfoot th {
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+}
+
+th {
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+td {
+  letter-spacing: 0;
+}
+
+tbody td {
+  text-align: left;
+      padding: 0;
+    padding-left: 7px;
+}
+
+/* spacing */
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid grey;
+   color: #7d7a7a;
+}
+
+th {
+text-transform: uppercase;
+}
+
+th.top{
+  opacity: 1;
+      font-weight: 500;
+}
+
+thead th:nth-child(1) {
+  width: 9%;
+}
+
+thead th:nth-child(2) {
+  width: 30%;
+}
+
+thead th:nth-child(3) {
+  width: 10%;
+}
+
+thead th:nth-child(4) {
+  width: 10%;
+}
+thead th:nth-child(5) {
+  width: 10%;
+}
+thead th:nth-child(6) {
+  width: 10%;
+}
+thead th:nth-child(7) {
+  width: 25%;
+}
+thead th:nth-child(8) {
+  width: 25%;
+}
+
+th,
+td {
+  padding: 7px;
+  border: 2px solid white;
+}
+th.top{
+  border-bottom: 2px solid rgba(128, 128, 128, 0.25);
+}
+
+td:nth-child(2) {
+  width: 50%;
+  background: #f2f2f2;
+  color: #6291d7;
+  font-weight: 4  00;
+}
+
+thead {
+  color: white;
+  border: 3px solid rgba(128, 128, 128, 0.14);
+}
+
+thead th,
+tfoot th,
+tfoot td {
+  background: white;
+  color: grey;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+caption {
+  background-color: #115611;
+  color: white;
+  text-align: left;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+    padding: 10px;
+    caption-side: top;
+}
+
+tbody#players {
+  border: 3px solid rgba(128, 128, 128, 0.14);
+  a {
+    transition: color .4s ease-in-out;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

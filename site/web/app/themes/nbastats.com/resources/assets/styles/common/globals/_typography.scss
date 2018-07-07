@@ -1,0 +1,8 @@
+h2 {
+  font: $h2-font;
+
+  @include for-size(phone-down) {
+      font: $h2-font;
+      font: $h2-font-mobile;
+  }
+}

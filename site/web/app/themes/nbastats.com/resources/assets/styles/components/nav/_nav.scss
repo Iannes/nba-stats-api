@@ -1,0 +1,138 @@
+section.navigation-bar {
+
+    background-color: black;
+    @include for-size(phone-down) {
+        display: flex;
+    }
+
+    .logo-container {
+        display: flex;
+        flex: 1 1 100%;
+        width: 100%;
+        margin: 0 auto;
+        background: black;
+        height: 72px;
+
+        img {
+            height: 51px;
+            position: relative;
+            width: 120px;
+            margin-left: 40px;
+
+            &:focus {
+                outline: 0;
+            }
+
+            @include for-size(tablet-down) {
+                height: 46px;
+                width: 83px;
+                top: 0;
+            }
+            @include for-size(phone-down) {
+                height: 72px;
+                margin-left: 16px;
+                bottom: 7px;
+            }
+        }
+
+        a {
+            align-items: center;
+            transition: all .4s ease-in-out;
+        }
+
+        nav {
+            flex: 1 1 100%;
+            display: none;
+
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                max-width: 65%;
+                margin-left: auto;
+
+            &.nav {
+                height: 100%;
+            }
+
+                li {
+                    position: relative;
+                    transition: color 500ms ease;
+                    font-size: 14px;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+
+                    @media (max-width: 1050px) {
+                        display: none;
+                    }
+
+                    a {
+                        font-family: $font-family;
+                        color: white;
+                        padding: 15px 10px;
+                    }
+                }
+            }
+
+            // Links within 1st level dropdowns
+            .menu-item-has-children {
+
+                ul {
+                    top: 92px;
+                    visibility: hidden;
+                    display: none;
+                    left: -17px;
+                    transition: all 1.8s ease-in-out;
+                    background: white;
+                    position: absolute;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    min-width: 285px;
+
+                    li {
+                        padding: 0;
+                        justify-content: center;
+                        width: 100%;
+                        align-items: flex-start; // IE fix
+
+                        a {
+                            color: $secondary;
+                            @include smooth-fonts;
+                            font-size: 13px;
+                            width: 100%;
+
+                            &:hover {
+                                @include for-size(desktop-hover) {
+                                  color: white;
+                                  background-color: $secondary;
+                                  transition: all .4s ease-in-out;
+                                }
+                             }
+                        }
+                    }
+                }
+            }
+        }
+
+        .menu-main-navigation-container {
+            height: 81px;
+        }
+
+        li:hover > ul {
+            visibility: visible;
+            display: flex;
+            transform: translate(0, 0);
+            transition: all .5s ease-in-out;
+            opacity: 1;
+            overflow: hidden; // IE bug fix to hide dots from sublist when parent is hovered
+        }
+    }
+}
+
+section.navigation-bar .logo-container nav > ul > li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}

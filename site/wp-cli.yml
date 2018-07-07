@@ -1,0 +1,10 @@
+path: web/wp
+@development:
+  ssh: vagrant@stats.test/srv/www/nbastats.com/current
+@staging:
+  ssh: web@stats.yannisspyrou.co.uk/srv/www/nbastats.com/current
+@production:
+  ssh: web@productionSite.com/srv/www/nbastats.com/current
+
+  #Change the three instances of nbastats.com and example.dev
+  #and example.ckdreview.co.uk for first deploy

@@ -1,0 +1,75 @@
+.footer {
+  &-container {
+    @extend .section-container;
+    background: $primary;
+    min-height: auto;
+    padding: 50px 20px;
+  }
+
+  &-column-wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(271px, 1fr) ) ;
+    color: white;
+
+    ul li a {
+
+      color: white;
+      font-family: proxima-soft, sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      line-height: 19px;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
+      width: 75%;
+
+      &.quick-links__social--links {
+        width: 38%;
+        margin-right: 0;
+        padding-right: 0;
+      }
+
+      &:focus {
+        outline: 0;
+      }
+      @include for-size(desktop-hover) {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+    }
+
+    .quick-links__social li a{
+      @extend .faded-text;
+    }
+    .quick-links__social--title a{
+      color: white;
+    }
+
+    .footer-column {
+      // min-width: 400px;
+
+      &.footer-column__social {
+        min-width: 500px;
+        .quick-links__social--title a{
+          color: white!important;
+          font-weight: bold;
+          margin-bottom: 15px;
+        }
+      }
+
+      img {
+        margin-bottom: 40px;
+      }
+
+    }
+
+
+  }
+
+}

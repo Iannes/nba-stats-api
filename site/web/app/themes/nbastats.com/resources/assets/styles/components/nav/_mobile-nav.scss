@@ -1,0 +1,40 @@
+#mobile-nav {
+    z-index: 90;
+    position: fixed;
+    width: 80%;
+    transition: all .9s ease-in-out;
+    background: rgb(8, 107, 61);
+    max-width: 32%;
+    @include for-size(tablet-down) {
+        max-width: 72%;
+    }
+}
+
+.mobile-menu {
+    transition: all .9s ease-in-out;
+    &.open {
+        opacity: 1!important;
+    }
+
+    &.closed {
+        display: none;
+    }
+}
+
+ul#menu-primary-navigation-1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    min-height: 50vh;
+    background: $primary;
+    li a {
+        color: white;
+    }
+}
+
+.mm-menu .mm-navbar a, .mm-menu .mm-navbar>* {
+    color: rgb(255, 255, 255);
+}

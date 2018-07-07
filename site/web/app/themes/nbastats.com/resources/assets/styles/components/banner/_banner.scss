@@ -1,0 +1,137 @@
+.background-image {
+  background-color: $primary;
+  background-size: cover!important;
+  overflow: hidden;
+  padding:0;
+  width: 100%;
+
+  &__single {
+    height: 55vh !important;
+    color: white;
+    background-color: #ab521b;
+
+    figure {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      top: 15%;
+    }
+  }
+
+  &__banner {
+    height: 100vh!important;
+  }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: hsla(0, 0%, 0%, 0.17);
+      opacity: .7;
+      z-index: 1;
+
+      .infectious-diseases & {
+        &:after {
+          background-color: hsla(118, 13%, 49%, 0.17);
+        }
+      }
+  }
+  // :after has lower z-index from everything else
+  & > * {
+    z-index: 10;
+  }
+
+  .overlay-text__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 40%;
+    width: 60%;
+
+    @include for-size(desktop-up) {
+      width: 50%;
+    }
+    @media screen and (max-width: 1150px) {
+      width: 80%;
+    }
+    @media screen and (max-width:886px) {
+      width: 92%;
+    }
+
+    p {
+      position: relative;
+      font-family: $font-family;
+      font-size: 20px;
+      line-height: 16px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: white;
+    }
+
+    h1 {
+      color: white;
+      font-size: 60px;
+      line-height: 64px;
+      font-weight: 400;
+      text-align: center;
+      letter-spacing: 0px;
+      opacity: 0;
+      transform: translate(0px, 50px);
+
+      @include for-size(small-laptop) {
+        font: $h1-font-tablet;
+      }
+      @include for-size(phone-down) {
+        font: $h1-font-mobile;
+      }
+    }
+    .animated-line {
+      position: relative;
+      display: block;
+      width: 1px;
+      height: 100px;
+      margin-right: auto;
+      margin-left: auto;
+      border-left: 1px dotted #fff;
+      height: 0;
+      transition: height 1200ms;
+    }
+
+    .button-container {
+      display: flex;
+      color: white;
+      width: 90%;
+      min-height: 150px;
+      justify-content: space-around;
+      align-items: center;
+
+      @media screen and (max-width:886px) {
+        flex-direction: column;
+        min-height: 200px;
+      }
+
+      @media screen and (min-width:1390px) {
+        width: 85%;
+      }
+
+      .button-link {
+        @extend .button;
+        opacity: 0;
+        transform: translate(0px, 50px);
+        animation: fadeUp .9s ease-in forwards;
+        &:nth-child(1) {animation-delay: .8s}
+        &:nth-child(2) {animation-delay:  1.1s}
+      }
+    }
+  }
+}

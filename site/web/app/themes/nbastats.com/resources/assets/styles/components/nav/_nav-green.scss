@@ -1,0 +1,12 @@
+.menu-infectious-diseases {
+.sub-menu li a {
+
+    &:hover {
+        @include for-size(desktop-hover) {
+            color: white!important;
+            background-color: $light-green!important;
+            transition: all .4s ease-in-out;
+            }
+        }
+    }
+}

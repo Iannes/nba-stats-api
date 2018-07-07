@@ -1,0 +1,24 @@
+/** Import theme styles */
+@import "common/globals/global-index";
+
+/** Import everything from autoload */
+@import "./autoload/**/*";
+
+/**
+ * Import npm dependencies
+ *
+ * Prefix your imports with `~` to grab from node_modules/
+ * @see https://github.com/webpack-contrib/sass-loader#imports
+ */
+// @import "~some-node-module";
+
+@import "~jquery.mmenu/dist/jquery.mmenu.all.css";
+// All components are imported on a main components-index.scss
+// found in components folder and then imported on our main.scss file
+
+// Components
+@import "components/components-index";
+// Common
+@import "common/animations/animations-index";
+// Layouts
+@import "layouts/layouts-index";

@@ -1,0 +1,46 @@
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) translateZ(0px);
+    transition: opacity 1500ms ease-out, transform 1600ms;
+  }
+}
+
+@keyframes expand {
+  0% {
+
+      transform: scaleX(0.8) scaleY(0.8) scaleZ(0.8);
+  }
+
+  100% {
+      transform: scaleX(1) scaleY(1) scaleZ(1);
+  }
+}
+
+@keyframes grow {
+  0% {
+
+      height:0;
+  }
+
+  100% {
+      height: 115px;
+  }
+}
+
+
+// CSS fallback to reveal page if js is deactivated
+@keyframes reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

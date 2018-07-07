@@ -1,0 +1,17 @@
+.menu-item > a {
+    color: white;
+}
+.mm-listview > li > a, .mm-listview > li > span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: white;
+    display: block;
+    padding: 15px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.mm-listview .mm-next {
+    width: 100%;
+}

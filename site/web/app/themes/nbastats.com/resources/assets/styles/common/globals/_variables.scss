@@ -1,0 +1,44 @@
+/** NBA Brand Colors */
+$primary:             #00437a;
+$secondary:           #00aec3;
+$grey:                #f7f7f7;
+$orange:              #ffa600;
+$dark-blue:           #001f38;
+$light-green:         #a1c861;
+$red:                 #ea5b0c;
+$green :              #006432;
+
+
+/** Box Model  */
+$spacer:                2rem;
+
+// // Fonts
+$font-family:                     "proxima-soft", sans-serif;
+$title-font-family:               "proxima-soft" , sans-serif;
+$paragraph-font-family:           "proxima-soft" , sans-serif;
+
+$paragraph-font:        21px / 26px $font-family;
+
+$heading-color:   #faf5e4;
+$h1-font:           42px / 46px $title-font-family;
+$h2-font:           30px / 34px $title-font-family;
+$h3-font:           13px / 17px $title-font-family;
+$h4-font-size:      26px / 30px $font-family;
+
+//Tablet
+$h1-font-tablet:    33px / 41px $font-family;
+$h2-font-tablet:    26px / 29px $title-font-family;
+$h4-font-tablet:    24px / 27px $title-font-family;
+
+//Mobile
+$h1-font-mobile:    31px / 37px $font-family;
+$h2-font-mobile:    23px / 26px $title-font-family;
+$h4-font-mobile:    21px / 23px $title-font-family;
+
+
+// Burger Colors
+$burger-color: white;
+
+
+// @lost flexbox flex;
+// @lost rounder 100;
