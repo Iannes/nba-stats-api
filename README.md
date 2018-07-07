@@ -1,4 +1,7 @@
 # [NBA STATS API](https://stats.nba.com/)
+
+Using the official NBA Stats api to render information on NBA Players for the current season and the Google Maps API to render a USA map with all NBA arenas.
+
 WordPress Theme uses [Sage 9](https://roots.io/sage)
 
 
