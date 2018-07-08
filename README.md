@@ -35,6 +35,6 @@ All `Blade` templates can be found under : `/WP_THEME`/resources/views/partials/
 ## Todos
 - Register own google maps api endpoint with WP REST API.
 - Restrict Access to the API
-- Save NBA json response as a file to the server and set a cron job to refresh the results to avoid making unnecessary calls to the API.
+- Avoid unnecessary API calls, by setting timestamps and calculating if data is stored for more than 15 minutes.
 - Use React to handle state
 - Refactor Dropdown sort-by
