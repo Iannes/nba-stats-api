@@ -19,13 +19,11 @@ All theme files are under `WP_THEME`
 
 ### ES6 Components Path
 
- All Components  can be found under `/WP_THEME`/resources/assets/scripts/components
+ All Components  can be found under [resources/assets/scripts/components](https://github.com/Iannes/nba-stats-api/tree/master/site/web/app/themes/nbastats.com/resources/assets/scripts/components)
 
 #### ES6 Template Files
 
- | All players Template | Single Player Template  |  Single Player Banner Image |
- | ------ | ------ | ----- |
-  `/WP_THEME`/resources/assets/scripts/templates/players-template.js |  `/WP_THEME`/resources/assets/scripts/templates/player-template.js | `/WP_THEME`/resources/assets/scripts/player-single.js |
+  All ES6 template files can be found [here](https://github.com/Iannes/nba-stats-api/tree/master/site/web/app/themes/nbastats.com/resources/assets/scripts/templates/)
 
  ### Blade Templates Path
 
