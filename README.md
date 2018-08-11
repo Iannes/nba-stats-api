@@ -15,6 +15,7 @@ WordPress Theme uses [Sage 9](https://roots.io/sage)
 
 ## WordPress Theme Path
 All theme files are under `WP_THEME`
+---
 `WP_THEME` = ~/site/web/app/themes/nbastats.com/
 
 ### ES6 Components Path
