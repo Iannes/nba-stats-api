@@ -37,3 +37,4 @@ All `Blade` templates can be found under : `/WP_THEME`/resources/views/partials/
 - Avoid unnecessary API calls, by setting timestamps and calculating if data is stored for more than 15 minutes.
 - Use React to handle state
 - Refactor Dropdown sort-by
+- Add Apollo Server and GraphQL
