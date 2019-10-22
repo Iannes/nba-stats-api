@@ -30,11 +30,3 @@ All theme files are under `WP_THEME`
 
 Sage 9 uses Laravel's `Blade` template engine to render views.
 All `Blade` templates can be found under : `/WP_THEME`/resources/views/partials/components
-
-## Todos
-- Register own google maps api endpoint with WP REST API.
-- Restrict Access to the API
-- Avoid unnecessary API calls, by setting timestamps and calculating if data is stored for more than 15 minutes.
-- Use React to handle state
-- Refactor Dropdown sort-by
-- Add Apollo Server and GraphQL
